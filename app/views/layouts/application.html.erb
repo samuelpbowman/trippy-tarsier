@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TrippyTarsier</title>
+    <title>The Bowmans</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +13,11 @@
   </head>
 
   <body>
+    <div class="img-container fade-in-fast">
+      <%= image_tag "bg1.png", alt: "thingy" %>
+    </div>
+    <div class="img-container"><h1>Coming soon!</h1></div>
+    <div class="img-container fade-in-slow"><h3>12/9/2023</h3></div>
     <%= yield %>
   </body>
 </html>

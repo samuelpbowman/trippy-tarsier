@@ -35,7 +35,7 @@ task :remote_environment do
 
   invoke :'rbenv:load', ruby_version
 end
-
+=begin
 # Put any custom commands you need to run at setup
 # All paths in `shared_dirs` and `shared_paths` will be created on their own.
 task :setup do
@@ -63,7 +63,7 @@ task :setup do
   end
 
 end
-
+=end
 desc "Deploys the current version to the server."
 task :deploy do
   # uncomment this line to make sure you pushed your local branch to the remote origin
@@ -79,6 +79,7 @@ task :deploy do
     invoke :'deploy:cleanup'
 
     on :launch do
+      command 'bundle binstubs puma --path ./sbin'
       # command "sudo systemctl restart #{fetch(:user)}"
     end
   end

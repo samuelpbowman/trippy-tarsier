@@ -79,7 +79,7 @@ task :deploy do
     invoke :'deploy:cleanup'
 
     on :launch do
-      command 'bundle binstubs puma --path ./sbin'
+      # command 'bundle binstubs puma --path ./sbin'
       # command "sudo systemctl restart #{fetch(:user)}"
     end
   end

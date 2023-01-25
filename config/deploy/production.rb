@@ -5,7 +5,7 @@
 
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
-server "thebowmans2023.wedding", user: "deploy", roles: %w{web app db}
+server "thebowmans.wedding", user: "deploy", roles: %w{web app db}
 set :puma_env, fetch(:rack_env, fetch(:rails_env, 'production'))
 
 

@@ -1,0 +1,61 @@
+/**
+ * adapted from https://codepen.io/raubaca/pen/PZzpVe
+*/
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap');
+.tabs {
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.tab {
+    width: 100%;
+    color: #293651;
+    overflow: hidden;
+    &-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        background: #e5ddcd;
+        cursor: pointer;
+        &::after {
+            content: "\276F";
+            width: 1em;
+            height: 1em;
+            text-align: center;
+            transition: all .35s;
+        }
+    }
+    &-content {
+        max-height: 0;
+        padding: 0 1em;
+        color: #293651;
+        background: #e5ddcd;
+        transition: all .35s;
+    }
+    &-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        background: #e5ddcd;
+        cursor: pointer;
+    }
+}
+input {
+    display: none;
+}  
+// :checked
+input:checked {
+    + .tab-label {
+        &::after {
+            transform: rotate(90deg);
+        }
+    }
+    ~ .tab-content {
+        max-height: 100vh;
+        padding: 1em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}

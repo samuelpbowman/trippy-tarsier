@@ -1,0 +1,14 @@
+@media only screen and (max-width: 768px) {
+    img.info {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 768px) and (orientation: landscape) {
+    img.info {
+        display: none;
+    }
+    svg {
+        display: none;
+    }
+}

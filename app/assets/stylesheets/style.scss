@@ -1,23 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Playfair+Display+SC:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap');
+$d: #293651;
 html, body {
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: #232023;
-    color: #FDF5E6;
-    font-family: 'Cormorant', serif;
+    background-color: #e5ddcd; /*#FDF5E6;*/
+    color: $d;
+    font-family: 'Averia Serif Libre', serif;
+    font-weight: 300;
     overflow-y: scroll;
     scroll-snap-type: block mandatory;
     scrollbar-width: none;
 }
+*::selection {
+    color: #232023;
+    background-color: #e5ddcd;
+}
+h1, h3 {
+    font-weight: 300;
+}
 h1.nameplate {
-    font-family: 'Playfair Display SC', serif;
     font-size: 56px;
 }
-.col > h1:first-of-type {
+.bright-font {
+    color: #e5ddcd;
+}
+h1.big {
     font-size: 40px;
-    margin-bottom: 0;
 }
 section {
     scroll-snap-align: center;
@@ -27,6 +37,16 @@ section {
     height: 100%;
     background-position-x: center;
     background-position-y: top;
+}
+.row > img {
+    height: 40%;
+    width: auto;
+    max-width: 90%;
+    overflow-y: none;
+}
+.row > .col {
+    float: left;
+    margin-right: 2em;
 }
 a {
     color: inherit;
@@ -47,6 +67,10 @@ a {
 svg {
     fill: #FDF5E6;
 }
+.cen > svg {
+    width: 60%;
+    height: auto;
+}
 .snapper {
     display: none;
 }
@@ -61,7 +85,7 @@ svg {
     text-align: right;
 }
 #top {
-    background-image: linear-gradient(#232023f2, #5e5a588c), url(/assets/img_2487.JPG);
+    background-image: linear-gradient(#293651f2, #5e5a588c), url(/assets/img_2487.JPG);
 }
 .goto {
     padding: 1em;
@@ -71,15 +95,22 @@ svg {
     min-width: 4em;
 }
 .goto > a {
-    color: #232023;
+    color: #293651;
     font-size: 18px;
     text-align: center;
     text-decoration: none;
-    font-family: 'Playfair Display SC', serif;
 }
 .goto:hover {
     background-color: #9d9790;
 }
 .phold {
     margin-top: 10%;
+}
+.pane {
+    margin-top: 5%;
+    margin-right: 5%;
+}
+.container {
+    margin: 10%;
+    margin-top: 5%;
 }

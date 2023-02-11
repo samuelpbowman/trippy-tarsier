@@ -82,7 +82,7 @@ GEM
       sshkit (>= 1.9.0)
     capistrano-bundler (1.6.0)
       capistrano (~> 3.1)
-    capistrano-passenger (0.2.0)
+    capistrano-passenger (0.2.1)
       capistrano (~> 3.0)
     capistrano-rails (1.4.0)
       capistrano (~> 3.1)
@@ -254,7 +254,7 @@ DEPENDENCIES
   bcrypt_pbkdf
   bootsnap
   capistrano (= 3.17.1)
-  capistrano-passenger (= 0.2.0)
+  capistrano-passenger (= 0.2.1)
   capistrano-rails (= 1.4.0)
   capistrano-rbenv (= 2.1.4)
   capistrano-ssh-doctor (~> 1.0)

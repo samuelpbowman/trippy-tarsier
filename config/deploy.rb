@@ -20,3 +20,5 @@ task :remote_environment do
 
   invoke :'rbenv:load', ruby_version
 end
+
+append :linked_files, "config/master.key"

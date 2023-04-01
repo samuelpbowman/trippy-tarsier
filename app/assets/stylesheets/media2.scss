@@ -1,0 +1,19 @@
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    .row > img {
+        height: 40%;
+        width: auto;
+        max-width: 90%;
+        overflow-y: none;
+    }
+    .row > * {
+        float: left;
+    }
+    .row > p {
+        max-width: 65%;
+        margin-left: 3em;
+    }
+}

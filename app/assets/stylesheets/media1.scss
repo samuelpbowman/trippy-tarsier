@@ -2,6 +2,30 @@
     img.info {
         display: none;
     }
+    .party {
+        display: none;
+    }
+    .row > img {
+        height: auto;
+        width: 90%;
+    }
+    .row > * {
+        float: left;
+    }
+    .row > p {
+        max-width: 90%;
+    }
+    .invi {
+        display: none;
+    }/*
+    .flipped {
+        transform: scale(-1, 1);
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -khtml-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+    }*/
 }
 
 @media only screen and (max-height: 768px) and (orientation: landscape) {

@@ -1,0 +1,17 @@
+@import "theme-colors.scss";
+
+.foobar {
+    background: none;
+}
+.baz {
+    list-style-type: none;
+}
+.baz > li {
+    float: left;
+    color: $backgroundColor;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.baz > li::after {
+    content: "  ";
+}

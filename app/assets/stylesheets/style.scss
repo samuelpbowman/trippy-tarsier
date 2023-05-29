@@ -1,110 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap');
-@import 'theme-colors.scss';
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap");
+@import "theme-colors.scss";
 
-html, body {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: $backgroundColor;
-    color: $textColor;
-    font-family: 'Averia Serif Libre', serif;
-    font-weight: 300;
-    overflow-y: scroll;
-    scroll-snap-type: block mandatory;
-    scrollbar-width: none;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: $backgroundColor;
+  color: $textColor;
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 300;
+  scrollbar-width: none;
 }
 *::selection {
-    color: $backgroundColor;
-    background-color: $selectColor;
+  color: $backgroundColor;
+  background-color: $selectColor;
 }
-h1, h3 {
-    font-weight: 300;
+h1,
+h3 {
+  font-weight: 300;
 }
 h1.nameplate {
-    font-size: 56px;
+  font-size: 56px;
 }
 .bright-font {
-    color: $backgroundColor;
+  color: $backgroundColor;
 }
 h1.big {
-    font-size: 40px;
+  font-size: 40px;
 }
-section {
-    scroll-snap-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    display: flex;
-    height: 100%;
-    background-position-x: center;
-    background-position-y: top;
+.jt {
+  height: 100%;
+  padding-top: 7%;
 }
 a {
-    color: inherit;
+  color: inherit;
 }
 .fade-in {
-    animation: fadeInAnimation ease 6s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  animation: fadeInAnimation ease 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 svg {
-    fill: $textColor;
+  fill: $textColor;
 }
 .cen > svg {
-    width: 60%;
-    height: auto;
-}
-.snapper {
-    display: none;
+  width: 50%;
+  height: auto;
 }
 .cen {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.rgt {
-    align-items: right;
-    justify-content: right;
-    text-align: right;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 #top {
-    background-image: linear-gradient(#293651f2, #5e5a588c), image-url("img_2487.JPG");
+  background-image: linear-gradient(#293651f2, #5e5a588c),
+    image-url("img_2487.JPG");
+  padding-top: 8%;
 }
 #top svg {
-    fill: $backgroundColor;
+  fill: $backgroundColor;
 }
 .goto {
-    padding: 1em;
-    border: none;
-    border-radius: 2em;
-    background-color: $buttonColor;
-    min-width: 4em;
+  padding: 1em;
+  border: none;
+  border-radius: 2em;
+  background-color: $buttonColor;
+  min-width: 4em;
 }
 .goto > a {
-    color: $buttonTextColor;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
+  color: $buttonTextColor;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
 }
 .goto:hover {
-    background-color: $hoverColor;
+  background-color: $hoverColor;
 }
-.phold {
-    margin-top: 10%;
+.body-text {
+  margin: 6%;
+  margin-top: 3%;
 }
-.pane {
-    margin-top: 5%;
-    margin-right: 5%;
+.ib {
+  display: inline-block;
+  padding-left: 5%;
 }
-.container {
-    margin: 10%;
-    margin-top: 5%;
+.ib ~ h1 {
+  padding-left: 5%;
+}
+p {
+  font-size: 18px;
+}
+img.party {
+    border-radius: 100%;
 }
